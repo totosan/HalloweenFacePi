@@ -1,4 +1,4 @@
-# This projects aims to have an 'AI driven Halloween'
+# This project aims to have an 'AI driven Halloween'
 
 ## The half of the story
 For some years ago I thought about making Halloween a bit more "interactive" than just putting creatures in the yard and let kids walk among them.
