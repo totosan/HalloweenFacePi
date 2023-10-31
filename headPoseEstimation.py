@@ -1,7 +1,7 @@
 import cv2
 import mediapipe as mp
 import numpy as np
-import time
+import time,os
 from random import randrange
 from flask import Flask, render_template, Response
 import pygame
@@ -11,6 +11,8 @@ from multiprocessing import Process, Queue
 app = Flask(__name__)
 #app.config["CACHE_TYPE"] = "null"
 
+# in case you run it as a service, set your path to become the working folder
+#os.chdir("/root/Halloween/")
 
 in_q = Queue()
 
@@ -171,10 +173,10 @@ def gen():
                         landmark_drawing_spec=drawing_spec,
                         connection_drawing_spec=drawing_spec)
 
-            ret, jpeg = cv2.imencode('.jpg', image)
-            frame=jpeg.tobytes()
-            yield (b'--frame\r\n'
-            b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
+        ret, jpeg = cv2.imencode('.jpg', image)
+        frame=jpeg.tobytes()
+        yield (b'--frame\r\n'
+        b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
          
 
 @app.route('/')
