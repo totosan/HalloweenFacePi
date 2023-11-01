@@ -1,12 +1,15 @@
 # This project aims to have an 'AI driven Halloween'
 
+| ![Alt text](assets/image-1.png) | ![Alt text](assets/image.png) |
+| --- | --- |
+
 ## The half of the story
 For some years ago I thought about making Halloween a bit more "interactive" than just putting creatures in the yard and let kids walk among them.
 There are plenty of nice tools and gimmicks out there, to make the event a special one, but I had an idea to make it more "individual".   
 So my idea was having a big monster in the yard that can recognize a child, ask for it's name and when returning somewhen, the monster can call the kid with it's name saying something really scary :-)   
 Sadly, I am working for year on it (partially, when time allows), so that I not really finished. I decided now for an interims version, that you can find in here.
 
-## The other half story
+## The other half of the story
 This here is about detecting a face and finding, if the face ist starring into the camera. In that case, a random monster scream will be played.
 
 ## Requirements
